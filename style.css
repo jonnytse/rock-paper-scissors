@@ -16,6 +16,10 @@ body {
     align-items: center;
 }
 
+p {
+    font-weight: 800;
+}
+
 .container {
     /* border: 1px solid lightgrey; */
     height: 200px;
@@ -33,17 +37,21 @@ button {
 }
 
 #outcome {
-    border: 1px solid black;
-    margin-bottom: 50px;
+    /* border: 2px solid black; */
+    margin-bottom: 30px;
+    padding-top: 20px;
     width: 200px;
+    height: 50px;
     text-align: center;
 }
 
 .gameDeclaration {
-    border: 2px solid black;
-    height: 100px;
-    width: 380px;
+    border: 2px solid red;
+    height: 80px;
+    width: 200px;
     text-align: center;
     color: red;
     font-weight: 700;
+    padding-top: 10px;
+    margin-bottom: 20px;
 }

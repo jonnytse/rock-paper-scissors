@@ -3,6 +3,7 @@ window.onload = () => {
     const playerButtons = document.querySelectorAll('.playerButton');
     // console.log(playerButtons);
     const result = document.querySelector('.gameDeclaration');
+    const gameOutcome = document.getElementById('outcome');
     
     let playerMove;
     
@@ -13,11 +14,13 @@ window.onload = () => {
                 const movesArray = ["rock", "paper", "scissors"]  
                 const computerMove = movesArray[computerNumber];  
                 console.log("Player chose " + playerMove, "vs. Computer chose " + computerMove)
+                gameOutcome.innerHTML = ("Player chose " + playerMove, "vs. Computer chose " + computerMove); 
     
                 if (playerMove === "rock" && computerMove === "scissors" ||
                     playerMove === "paper" && computerMove ===  "rock" ||
                     playerMove === "scissors" && computerMove === "paper") {
                     answer.innerHTML = ("Player wins");
+                    // gameOutcome.innerHTML = ("Player chose " + playerMove, "vs. Computer chose " + computerMove); 
                 } else if 
                     (playerMove === "rock" && computerMove === "paper" ||
                     playerMove === "paper" && computerMove === "scissors"||

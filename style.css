@@ -5,9 +5,11 @@ body {
 }
 
 .wrapper {
+    margin: 0 auto;
     border: 1px solid lightgrey;
     height: 400px;
     width: 700px;
+    margin-top: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -30,9 +32,18 @@ button {
     margin: 20px;
 }
 
+#outcome {
+    border: 1px solid black;
+    margin-bottom: 50px;
+    width: 200px;
+    text-align: center;
+}
+
 .gameDeclaration {
     border: 2px solid black;
     height: 100px;
     width: 380px;
     text-align: center;
+    color: red;
+    font-weight: 700;
 }
